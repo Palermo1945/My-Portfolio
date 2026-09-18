@@ -658,10 +658,12 @@ section {
   padding-left: 28px;
   border-left: 1px solid var(--border);
 }
+
 .timeline-item {
   position: relative;
   margin-bottom: 24px;
 }
+
 .timeline-marker {
   position: absolute;
   left: -33px;
@@ -671,52 +673,100 @@ section {
   border-radius: 50%;
   background: var(--accent);
 }
+
+.education-date {
+  margin: 0.5rem 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+}
+
+.education-logo {
+  width: 80px;
+  height: 80px;
+  object-fit: contain;
+  display: block;
+  margin: 0 auto 1rem;
+}
+
+.cert-logo {
+  width: 150px;
+  height: 150px;
+  object-fit: contain;
+  display: block;
+  margin: 0 auto 1rem;
+}
+
 .timeline-head {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: baseline;
   gap: 12px;
   margin-bottom: 4px;
+  text-align: center;
 }
+
+.timeline-content {
+  text-align: center;
+}
+
 .timeline-content h3 {
   font-size: 16px;
 }
+
 .timeline-company {
   font-family: var(--font-mono);
   font-size: 13px;
   color: var(--accent);
   margin-bottom: 8px;
+  text-align: center;
 }
+
 .timeline-content p {
   font-size: 14px;
 }
 
-.edu-grid, .achievements-grid, .testimonials-grid {
+.edu-grid,
+.achievements-grid,
+.testimonials-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
   gap: 18px;
 }
+
 .subsection-title {
   margin-top: 48px;
   margin-bottom: 20px;
   font-size: 20px;
+  text-align: center;
 }
+
 .cert-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
   gap: 14px;
 }
+
+.cert-card {
+  text-align: center;
+}
+
 .cert-card:hover {
   border-color: var(--accent);
 }
+
 .cert-card h4 {
   font-size: 14px;
   margin-bottom: 4px;
 }
+
 .cert-card p {
   font-size: 13px;
 }
-
+.project-tags {
+  justify-content: center;
+}
 /* ============================================================
    RESUME
    ============================================================ */

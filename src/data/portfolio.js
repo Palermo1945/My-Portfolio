@@ -170,6 +170,7 @@ export const education = [
   degree: 'Bachelor of Science in Information Technology',
   school: 'Carlos Hilado Memorial State College',
   dates: '2024',
+  image: '/CHMSU.png',
   coursework: [
     'Database Management',
     'Web Development',
@@ -187,7 +188,13 @@ export const education = [
 ]
 
 export const certifications = [
-  // { name: 'PLACEHOLDER Certification', org: 'PLACEHOLDER Org', date: '20XX', link: '' },
+  {
+    name: 'Computer Systems Servicing NC II',
+    org: 'Technical Education and Skills Development Authority (TESDA)',
+    date: '2020',
+    image: '/TESDA.png',
+    link: '',
+  },
 ]
 
 export const services = [

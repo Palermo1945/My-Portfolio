@@ -11,21 +11,38 @@ export default function Education() {
 
         {education.length === 0 ? (
           <p className="empty-state">
-            No education entries yet — add real details to <code>src/data/portfolio.js</code>.
+            No education entries yet — add real details to{' '}
+            <code>src/data/portfolio.js</code>.
           </p>
         ) : (
           <div className="edu-grid">
             {education.map((edu, i) => (
               <div key={i} className="card">
+
+                {/* School Logo */}
+                {edu.image && (
+                  <img
+                    src={edu.image}
+                    alt={`${edu.school} logo`}
+                    className="education-logo"
+                  />
+                )}
+
                 <div className="timeline-head">
                   <h3>{edu.degree}</h3>
-                  <span className="tag">{edu.dates}</span>
                 </div>
+
+                <p className="education-date">
+                  {edu.dates}
+              </p>
+
                 <p className="timeline-company">{edu.school}</p>
+
                 {edu.coursework?.length > 0 && (
                   <>
-                    <h4>Relevant Coursework</h4>
+                    
                     <div className="project-tags">
+                      <h4>Relevant Coursework</h4>
                       {edu.coursework.map((c) => (
                         <span key={c} className="tag">
                           {c}
@@ -41,7 +58,10 @@ export default function Education() {
 
         {certifications.length > 0 && (
           <>
-            <h3 className="subsection-title">Certifications &amp; Training</h3>
+            <h3 className="subsection-title">
+              Certifications &amp; Training
+            </h3>
+
             <div className="cert-grid">
               {certifications.map((cert, i) => (
                 <a
@@ -51,7 +71,18 @@ export default function Education() {
                   rel={cert.link ? 'noreferrer' : undefined}
                   className="card cert-card"
                 >
+
+                  {/* TESDA Logo */}
+                  {cert.image && (
+                    <img
+                      src={cert.image}
+                      alt={`${cert.org} logo`}
+                      className="cert-logo"
+                    />
+                  )}
+
                   <h4>{cert.name}</h4>
+
                   <p>
                     {cert.org} · {cert.date}
                   </p>

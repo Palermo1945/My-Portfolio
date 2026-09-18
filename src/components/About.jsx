@@ -11,7 +11,7 @@ export default function About() {
 
         <div className="about-grid">
           <div className="about-photo" role="img" aria-label="Profile photo placeholder">
-            <span>Photo</span>
+            <img src="/Profile.jpg" alt="Profile photo" />
           </div>
 
           <div className="about-copy">

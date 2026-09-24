@@ -101,10 +101,10 @@ export const projects = [
     name: 'AI Resume to Video',
     category: 'AI Powered Web App',
     description: ' Website that let you convert your resume into a video with the help of Gemini API & Document Extractor tool to summarize the content and sent to DID to generate a video based on the summarize content of your resume.',
-    image: null,
+    image: "./AiPicture.png",
     technologies: ['React Native', 'Express.js', 'Tailwind CSS', 'Gemini API', 'DID API', 'Document Extractor Tool'],
     github: 'https://github.com/Palermo1945/SPicture.git',
-    demo: '',
+    demo: 'https://picture-7x7m.onrender.com/',
     featured: true,
     details: {
   overview: 'An AI-powered web application that transforms a traditional resume into a video presentation. The system extracts and summarizes information from a resume, uses Gemini API to process the content, and sends the generated summary to the D-ID API to create a video based on the applicant’s professional information.',
@@ -135,7 +135,7 @@ export const projects = [
     name: 'Brgy Management Information System',
     category: 'Web',
     description: 'A web-based information system for the Brgy, not official a project proposed for our Brgy but rejected ',
-    image: null,
+    image: "./brgy.png",
     technologies: ['HTML', 'CSS', 'JavaScript', 'PHP'],
     github: 'https://github.com/Palermo1945/brgy.git',
     demo: '',
@@ -167,7 +167,7 @@ export const experience = [
 
 export const education = [
 {
-  degree: 'Bachelor of Science in Information Technology',
+  degree: 'Bachelor of Science in Information System',
   school: 'Carlos Hilado Memorial State College',
   dates: '2024',
   image: '/CHMSU.png',

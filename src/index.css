@@ -205,6 +205,15 @@ section {
   border: 1px solid var(--border);
   color: var(--text-dim);
   background: var(--bg-elevated-2);
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.skill-icon {
+  flex: 0 0 auto;
+  font-size: 14px;
+  color: var(--accent);
 }
 
 .visually-hidden {

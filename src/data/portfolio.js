@@ -78,23 +78,30 @@ export const skills = [
 export const projects = [
   {
     id: 'project-1',
-    name: 'Flask Simple Card App',
-    category: 'Web', // Web | Mobile | AI | Database | IT Systems | Other
-    description: 'A Simple Website Card App built with Flask, HTML, CSS, and Python. It allows users to view cards, the developer inserted for hobby only',
-    image: null, // put an image path in /src/assets and reference it, or leave null for a generated placeholder
-    technologies: ['Flask', 'Python', 'CSS'],
-    github: 'https://github.com/Palermo1945/Talking_Heads_Flask.git',
-    demo: '',
+    name: 'JGCML Point of Sale',
+    category: 'Web',
+    description: 'A browser-based point-of-sale and inventory system for grocery store staff, with separate admin and cashier workflows.',
+    image: "./pos.png",
+    technologies: ['PHP', 'MySQL', 'JavaScript', 'Bootstrap', 'CSS'],
+    github: '',
+    demo: 'http://chrispointofsale.page.gd/pages/index.php',
     featured: false,
     details: {
-      overview: 'PLACEHOR — what is this project and who is it for?',
-      problem: 'PLACEHDER — what problem did this solve?',
-      solution: 'PLACEHOLDER — how did you solve it?',
-      features: ['PLACEHOLDER feature one', 'PLACEHOLDER feature two', 'PLACEHOLDER feature three'],
-      architecture: 'PLHOLDER — brief architecture/stack overview.',
-      challenges: 'PLACEHOLDER — a notable challenge and how you addressed it.',
-      results: 'PLACEHOLDER — outcome, impact, or what you learned.',
-    },
+      overview: 'A point-of-sale system for managing grocery sales and inventory, with tools for cashiers to process transactions and admins to manage store operations.',
+      problem: 'The store needed one system to handle checkout, product stock, purchase orders, and sales records instead of tracking those activities separately.',
+      solution: 'Built a PHP application backed by MySQL, with separate admin and cashier workspaces for day-to-day sales and store management.',
+      features: [
+        'Cashier checkout for cash and credit sales',
+        'Product catalog and inventory tracking',
+        'Purchase orders, supplier records, and stock receiving',
+        'Printable sales receipts',
+        'Customer records',
+        'Sales, inventory, collection, and returns reports'
+      ],
+      architecture: 'Server-rendered PHP pages use PDO to access a MySQL database. Bootstrap, jQuery, and JavaScript provide the interface and interactive controls.',
+      challenges: 'Keeping stock quantities and sales totals consistent across product entry, checkout, and payment flows required validating key values in the server-side handlers.',
+      results: 'Created an end-to-end grocery POS workflow connecting checkout, inventory, purchasing, and reporting. The project provided practical experience building a database-backed business application.'
+    }
   },
   {
     id: 'project-2',
